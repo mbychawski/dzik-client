@@ -1,0 +1,43 @@
+<script type="text/x-template" id="mainView">
+    <div class="text-center page-header">
+        <h1>DZIK</h1>
+        <h2>Doskonałe Zarządzanie Informacą Kredytową</h2>
+        <h4><%= config.bankName %></h4>
+    </div>
+    <div class="row">
+        <div class="list-group col-sm-offset-3 col-sm-6">
+          <a href="#obligations" class="list-group-item">Sprawdź zobowiązania klienta</a>
+          <a href="#new-obligation" class="list-group-item">Wprowadź informację o nowym zobowiązaniu</a>
+          <a href="#repayment" class="list-group-item">Wprowadź informację o spłacie zobowiązania</a>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-template" id="alert">
+  <div class="alert <%= alertClass %> alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong><%= title %></strong> <%= message %>
+  </div>
+</script>
+
+<script type="text/x-template" id="testKit01">
+</script>
+
+<script type="text/x-template" id="testKit02">
+  <button class="btn btn-primary" id="generateData">Wygeneruj losowy PESEL</button>
+  <p>
+    Użyj istniejących numerów PESEL:
+  </p>
+  <div class="btn-group-vertical" role="group">
+     <% _.each(peselList, function( pesel ) { %>
+        <button type="button" class="btn btn-primary btn-xs btnPesel" pesel="<%= pesel %>"><%= pesel %></button>
+     <% }); %>
+  </div>
+</script>
+
+<script type="text/x-template" id="testKit03">
+  <div class="btn-group-vertical" role="group">
+    <button class="btn btn-primary btn-xs" id="generateData">Wygeneruj dane osobowe</button>
+    <button class="btn btn-primary btn-xs" id="generateCreditData">Wygeneruj dane kredytu</button>
+  </div>
+</script>

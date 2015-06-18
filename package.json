@@ -1,0 +1,15 @@
+{
+  "name": "rso-front-end",
+  "description": "RSO BIK Client",
+  "main": "index.html",
+  "window": {
+    "title": "RSO BIK Klient",
+    "toolbar": false,
+    "frame": true,
+    "width": 1024,
+    "height": 800,
+    "position": "center",
+    "min_width": 800,
+    "min_height": 600
+  }
+}

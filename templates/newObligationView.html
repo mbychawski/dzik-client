@@ -1,0 +1,88 @@
+<script type="text/x-template" id="newObligation">
+  <div class="page-header">
+      <h1>
+        <a href="#" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+        </a>
+        Nowe zobowiązanie
+      </h1>
+  </div>
+  <div class="row">
+      <div>
+          <div class="row">
+              <div class="col-sm-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Dane osobowe</div>
+                    <div class="panel-body personalData">
+                        <div class="form-group">
+                          <label for="fname">Imię</label>
+                          <input data-validator="basic" type="text" class="form-control" id="fname" placeholder="Imię">
+                        </div>
+                        <div class="form-group">
+                          <label for="lname">Nazwisko</label>
+                          <input data-validator="basic" type="text" class="form-control" id="lname" placeholder="Nazwisko">
+                        </div>
+                        <div class="form-group">
+                          <label for="pesel">PESEL</label>
+                          <input data-validator="pesel" type="text" class="form-control" id="pesel" placeholder="PESEL">
+                        </div>
+                        <div class="form-group">
+                          <label for="documentNumber">Numer dokumentu</label>
+                          <input data-validator="basic" type="text" class="form-control" id="documentNumber" placeholder="Numer dokumentu">
+                        </div>
+                        <div class="form-group">
+                          <label for="phonenumber">Numer telefonu</label>
+                          <input data-validator="basic" type="tel" class="form-control" id="phonenumber" placeholder="Numer telefonu">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input data-validator="email" type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="panel panel-default personalData">
+                    <div class="panel-heading">Adres korespondencyjny</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                          <label for="street">Ulica nr domu / nr lokalu</label>
+                          <input data-validator="basic" type="text" class="form-control" id="street" placeholder="Ulica nr domu / nr lokalu">
+                        </div>
+                        <div class="form-group">
+                          <label for="zipCode">Kod pocztowy</label>
+                          <input data-validator="zipCode" type="text" class="form-control" id="zipCode" placeholder="Kod pocztowy">
+                        </div>
+                        <div class="form-group">
+                          <label for="city">Miasto</label>
+                          <input data-validator="basic" type="text" class="form-control" id="city" placeholder="Miasto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Dane zobowiązania</div>
+                    <div class="panel-body creditData">
+                        <div class="form-group">
+                          <label for="name">Nazwa</label>
+                          <input data-validator="basic" type="text" class="form-control" id="name" placeholder="Nazwa">
+                        </div>
+                        <div class="form-group">
+                          <label for="value">Wartość</label>
+                          <input data-validator="numberPositive" type="number" class="form-control" id="value" placeholder="Wartość">
+                        </div>
+                        <div class="form-group">
+                          <label for="date">Termin spłaty</label>
+                          <input data-validator="basic" type="date" class="form-control" id="date" placeholder="Termin spłaty">
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <dir class="row">
+                <div class="col-sm-6">
+                  <button class="btn btn-primary btn-lg btn-block sendBtn" tabindex="2">Wyślij</button>
+                </div>
+              <div>
+      </div>
+  </div>
+</script>
